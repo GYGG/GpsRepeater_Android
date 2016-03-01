@@ -179,7 +179,7 @@ public void onLocationChanged(AMapLocation amapLocation) {
 
 由于我们的模拟的目的在于进行应用业务逻辑的测试。所以在模拟过程中，不能干预上层业务层和中间层高德 SDK 的本身逻辑。从而必然的，需要一种相对黑盒的模拟方法。所以我们通过使用 GpsRepeater 作为一个第三方应用，在后台对系统的 LocationManager 的定位数据进行模拟。从而达到「部分黑盒」的目的。
 
-具体架构见下图： ![mock location on AMap](./mock location on AMap.svg)
+具体架构见下图： ![mock location on AMap](/mock.location.on.AMap.svg)
 
 ### ξ 3.3 模拟 GPS
 
@@ -347,4 +347,3 @@ public class GpsRepeater {
 * 《深入理解 Android- WiFi、NFC 和 GPS 卷》-邓凡平著 机械工业出版社
 * [Android Dev 官网资料《 Making Yout App Location-Aware》](http://developer.android.com/training/location/index.html)
 * [高德 SDK API ](http://lbs.amap.com/api/android-location-sdk/guide/location/)
-* ​
